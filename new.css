@@ -6,16 +6,60 @@
 }
 
 
-.banner {
+. content {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
-   /* background: linear-gradient(#a7afaa,#c3c7c7),*/
-   background: url(../Shop_img/banner.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.content img{
+    width: 50px;
+    margin-top: 55px;
 }
 
 
+
+
+#myVideo {
+
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+
+
+
+.content {
+
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+
+}
+
+
+
+.banner {
+
+   /* background: linear-gradient(#a7afaa,#c3c7c7),*/
+    background:  url(../Shop_img/banner.jpeg);
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+
+}
 
 .logo {
     width: 80px;
@@ -28,7 +72,6 @@
     text-align: center;
     color: #efefef;
     padding-top: 180px;
-
 }
 
 .banner-text h1 {
@@ -36,7 +79,7 @@
     font-family:monospace;
 }
 
-.banner-text p{
+.banner-text p {
     font-size: 30px;
     font-style: italic;
 }
@@ -316,6 +359,7 @@ hr {
     .single-service{
         flex-basis: 100%;
         margin-bottom: 30px;
+
     }
     .service-desc p {
         font-size: 12px;
@@ -389,6 +433,7 @@ hr {
 @media screen and (max-width: 770px){
     .testimonial-col{
         flex-basis: 100%;
+
     }
 }
 
@@ -478,6 +523,7 @@ hr {
     .footer-left,.footer-right{
         flex-basis: 100%;
         font-size: 14px;
+
     }
     .footer-img {
         top: 25%;

@@ -21,6 +21,25 @@
 </head>
 <body>
 
+
+
+    <video autoplay muted loop id="myVideo">
+  <source src="../Shop_img/Aston%20Martin.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Heading
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti optio quo adipisci, mollitia vero sunt porro maxime architecto. Cupiditate voluptate nobis dolorem ipsam architecto iste quod, similique doloribus dicta odit.</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione voluptate, perspiciatis vel eum incidunt debitis commodi ipsum quae repellendus eos porro ex corporis odio nihil! Consequuntur iusto recusandLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione voluptate, perspiciatis vel eum incidunt debitis commodi ipsum quae repellendus eos porro ex corporis odio nihil! Consequuntur iusto recusandLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione voluptate, perspiciatis vel eum incidunt debitis commodi ipsum quae repellendus eos porro ex corporis odio nihil! Consequuntur iusto recusandae in.</p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+     <img src="../Shop_img/play.png" id="menu2">
+
+
+</div>
+
+
+
   <section class="banner">
 
 <img src="../Shop_img/logo.png"  class="logo">
@@ -165,7 +184,7 @@
     <section class="testimonial">
         <div class="title-text">
              <p>Testimonial</p>
-             <h1>Wath clinet says</h1>
+             <h1>What clinets says</h1>
          </div>
          <div class="testimonial-row">
              <div class="testimonial-col">
@@ -269,7 +288,27 @@
     speedAsDuration: true
 });
 
+
+
+
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+
+
     </script>
+
+
 
 
 
